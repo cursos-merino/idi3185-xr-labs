@@ -1,0 +1,77 @@
+site_name: IDI 3185 · Laboratorios de Realidad Extendida
+site_description: Libro de laboratorios autoguiados de VR, AR y MR de DILAB-UC.
+site_url: https://leonelmerino.github.io/idi3185-xr-labs/
+repo_url: https://github.com/leonelmerino/idi3185-xr-labs
+repo_name: leonelmerino/idi3185-xr-labs
+edit_uri: edit/main/docs/
+strict: true
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+plugins:
+  - search:
+      lang: es
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+copyright: Contenido CC BY-SA 4.0 · Código MIT · IDI 3185 / DILAB-UC
+nav:
+  - Inicio: index.md
+  - Cómo usar el libro: como-usar-el-libro.md
+  - "Preludio":
+      - "M0 · Desarrollo asistido por IA en XR": preludio/m0-ia-en-xr.md
+      - "M1 · Nivelación Unity + XRI Simulator": preludio/m1-unity-xri-nivelacion.md
+  - "Realidad virtual (VR)":
+      - "V1 · Escena VR básica: locomoción, teletransporte, raycast": bloque-vr/v1-escena-basica.md
+      - "V2 · Interacción con objetos: grab, physics, two-hand": bloque-vr/v2-interaccion-objetos.md
+      - "V3 · UI espacial y feedback multimodal": bloque-vr/v3-ui-espacial.md
+      - "V4 · Locomoción avanzada y mitigación de cibermareo": bloque-vr/v4-locomocion-avanzada.md
+      - "V5a · Mini-experiencia VR: implementación": bloque-vr/v5a-mini-experiencia.md
+      - "V5b · Mini-experiencia VR: evaluación con usuario": bloque-vr/v5b-evaluacion.md
+  - "Realidad aumentada (AR)":
+      - "A1 · AR Foundation: detección de planos y anclaje": bloque-ar/a1-ar-foundation-basico.md
+      - "A2 · Image tracking y objetos sobre marcadores": bloque-ar/a2-image-tracking.md
+      - "A3 · Oclusión, iluminación estimada y coherencia visual": bloque-ar/a3-oclusion-iluminacion.md
+      - "A4 · Mesh scanning y colisiones con el entorno real": bloque-ar/a4-mesh-scanning.md
+      - "A5a · Mini-experiencia AR situada: implementación": bloque-ar/a5a-mini-experiencia.md
+      - "A5b · Mini-experiencia AR situada: evaluación": bloque-ar/a5b-evaluacion.md
+  - "Realidad mixta (MR)":
+      - "X1 · PolySpatial básico: escena MR en Vision Pro": bloque-mr/x1-polyspatial-basico.md
+      - "X2 · Input por mirada y pellizco; comparativa con Quest 3 passthrough": bloque-mr/x2-mirada-pellizco.md
+      - "X3 · Anclajes persistentes y contenido mixto en el espacio": bloque-mr/x3-anclajes-persistentes.md
+      - "X4 · Visualización situada: datos anclados en el espacio físico": bloque-mr/x4-visualizacion-situada.md
+      - "X5a · Mini-experiencia MR: implementación": bloque-mr/x5a-mini-experiencia.md
+      - "X5b · Mini-experiencia MR: evaluación": bloque-mr/x5b-evaluacion.md
+  - "Bonus":
+      - "HL · HoloLens 1 con MRTK": bonus/hl-hololens-mrtk.md
+  - Apéndices:
+      - Preparar el entorno: apendices/setup-entorno.md
+      - Calendario sugerido: apendices/calendario-sugerido.md
+      - Hardware alternativo: apendices/hardware-alternativo.md
+      - Uso de IA: apendices/uso-de-ia.md
+      - Resolución de problemas: apendices/troubleshooting.md

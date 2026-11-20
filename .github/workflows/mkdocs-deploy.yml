@@ -1,0 +1,69 @@
+name: Libro MkDocs
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'requirements-docs.txt'
+      - '.github/workflows/mkdocs-deploy.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'requirements-docs.txt'
+      - '.github/workflows/mkdocs-deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Comprobar el libro
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-docs.txt
+      - run: python -m pip install -r requirements-docs.txt
+      - run: python -m mkdocs build --strict
+      - uses: actions/upload-artifact@v4
+        with:
+          name: libro-mkdocs
+          path: site/
+          if-no-files-found: error
+          retention-days: 7
+
+  deploy:
+    name: Publicar en gh-pages
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: mkdocs-gh-pages
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-docs.txt
+      - run: python -m pip install -r requirements-docs.txt
+      - name: Configurar autor del despliegue
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - run: python -m mkdocs gh-deploy --force --strict
