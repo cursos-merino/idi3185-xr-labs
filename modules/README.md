@@ -1,6 +1,6 @@
 # Módulos
 
-Cada una de las 21 carpetas reserva un módulo definido en PLAN.md.
+Cada una de las 21 carpetas reserva un módulo del libro.
 Actualmente contienen solo una referencia a su página del libro.
 
 El piloto M1 establecerá el patrón de `starter/`, `tests/`, `acceptance.md`,

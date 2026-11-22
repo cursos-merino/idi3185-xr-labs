@@ -1,7 +1,7 @@
 # Calendario sugerido
 
 Este calendario usa números de semana para poder adaptarse a cada edición.
-Es la referencia de PLAN.md; el profesor confirma su ajuste a la cátedra.
+El profesor confirma su ajuste a la cátedra en cada edición.
 La disponibilidad del material depende del avance de construcción del libro.
 
 | Semana | Módulo sugerido | Contexto de cátedra |
