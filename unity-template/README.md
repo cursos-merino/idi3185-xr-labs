@@ -2,7 +2,7 @@
 
 **Estado: estructura reservada; todavía no es un proyecto Unity válido.**
 
-Las carpetas siguen la sección 3.1 de PLAN.md. El piloto M1 fijará la versión
+Las carpetas siguen la estructura definida en el plan del proyecto. El piloto M1 fijará la versión
 exacta de Unity 6 LTS, los paquetes y la configuración de Test Framework.
 No abras esta carpeta esperando una escena ejecutable todavía.
 

@@ -7,12 +7,6 @@ Pontificia Universidad Católica de Chile (DILAB-UC).
 los proyectos Unity, tutoriales completos, tests y builds siguen pendientes.
 El siguiente entregable es el piloto M1, sujeto a revisión del profesor.
 
-Verificación inicial: configuración YAML válida, 28 páginas incluidas en la
-navegación, 21 carpetas de módulos y 102 enlaces locales comprobados entre
-ambos repositorios. El HTML se generó correctamente con
-`python -m mkdocs build --strict`. La publicación en Pages sigue pendiente:
-la terminal de esta sesión todavía no puede conectarse a GitHub.
-
 ## Ver el libro localmente
 
 CI utiliza Python 3.11. Desde esta carpeta:
@@ -36,7 +30,7 @@ El resultado se genera en `site/`, que no se versiona.
 
 | Ruta | Contenido |
 |---|---|
-| [PLAN.md](PLAN.md) | Fuente de verdad y decisiones del proyecto |
+| `PLAN.md` | Fuente de verdad del proyecto; vive en el repo privado de soluciones |
 | [docs/](docs/index.md) | Libro MkDocs en español |
 | [modules/](modules/README.md) | Espacios reservados para los 21 módulos |
 | [unity-template/](unity-template/README.md) | Estructura reservada para el proyecto base |
@@ -50,11 +44,9 @@ un repositorio privado separado.
 ## Publicación
 
 El workflow de documentación comprueba PRs a `main` y publica en `gh-pages`
-al incorporar cambios en `main`. Hay que configurar GitHub Pages para servir
-esa rama: consulta [.github/README.md](.github/README.md).
+al incorporar cambios en `main`. Detalles en [.github/README.md](.github/README.md).
 
-URL prevista, todavía sin publicación verificada:
-<https://leonelmerino.github.io/idi3185-xr-labs/>.
+Libro publicado: <https://leonelmerino.github.io/idi3185-xr-labs/>.
 
 ## Contribución y licencias
 

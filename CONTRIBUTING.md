@@ -2,7 +2,7 @@
 
 ## Equipo constructor
 
-El plan es la fuente de verdad. Los cambios pedagógicos o de arquitectura
+El plan (`PLAN.md`, en el repo privado de soluciones) es la fuente de verdad. Los cambios pedagógicos o de arquitectura
 requieren revisión del profesor; no se modifican las decisiones de su sección 2
 como parte de una tarea de infraestructura.
 
