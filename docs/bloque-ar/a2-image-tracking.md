@@ -10,7 +10,7 @@
     - **Dispositivo:** iPhone/iPad/Android
     - **Puntos previstos:** 10
     - **Obligatoriedad:** Electivo
-    - **Semana recomendada:** 7
+    - **Semana recomendada:** 8
 
 El contenido se desarrollará siguiendo la plantilla del plan y el patrón
 que se apruebe para el piloto M1.

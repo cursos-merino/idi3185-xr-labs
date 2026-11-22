@@ -35,14 +35,14 @@ Todos los módulos del catálogo están **pendientes de implementación**.
 | [V5a](bloque-vr/v5a-mini-experiencia.md) | Mini-experiencia VR: implementación | 13 | Electivo |
 | [V5b](bloque-vr/v5b-evaluacion.md) | Mini-experiencia VR: evaluación con usuario | 13 | Electivo |
 | [A1](bloque-ar/a1-ar-foundation-basico.md) | AR Foundation: detección de planos y anclaje | 7 | Obligatorio (muestra) |
-| [A2](bloque-ar/a2-image-tracking.md) | Image tracking y objetos sobre marcadores | 7 | Electivo |
-| [A3](bloque-ar/a3-oclusion-iluminacion.md) | Oclusión, iluminación estimada y coherencia visual | 13 | Electivo |
+| [A2](bloque-ar/a2-image-tracking.md) | Image tracking y objetos sobre marcadores | 8 | Electivo |
+| [A3](bloque-ar/a3-oclusion-iluminacion.md) | Oclusión, iluminación estimada y coherencia visual | 10 | Electivo |
 | [A4](bloque-ar/a4-mesh-scanning.md) | Mesh scanning y colisiones con el entorno real | 11 | Electivo |
 | [A5a](bloque-ar/a5a-mini-experiencia.md) | Mini-experiencia AR situada: implementación | 12 | Electivo |
 | [A5b](bloque-ar/a5b-evaluacion.md) | Mini-experiencia AR situada: evaluación | 12 | Electivo |
 | [X1](bloque-mr/x1-polyspatial-basico.md) | PolySpatial básico: escena MR en Vision Pro | 4 | Obligatorio (muestra) |
-| [X2](bloque-mr/x2-mirada-pellizco.md) | Input por mirada y pellizco; comparativa con Quest 3 passthrough | 10 | Electivo |
-| [X3](bloque-mr/x3-anclajes-persistentes.md) | Anclajes persistentes y contenido mixto en el espacio | 13 | Electivo |
+| [X2](bloque-mr/x2-mirada-pellizco.md) | Input por mirada y pellizco; comparativa con Quest 3 passthrough | 8 | Electivo |
+| [X3](bloque-mr/x3-anclajes-persistentes.md) | Anclajes persistentes y contenido mixto en el espacio | 10 | Electivo |
 | [X4](bloque-mr/x4-visualizacion-situada.md) | Visualización situada: datos anclados en el espacio físico | 11 | Electivo |
 | [X5a](bloque-mr/x5a-mini-experiencia.md) | Mini-experiencia MR: implementación | 12 | Electivo |
 | [X5b](bloque-mr/x5b-evaluacion.md) | Mini-experiencia MR: evaluación | 12 | Electivo |
