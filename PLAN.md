@@ -860,10 +860,15 @@ Ejemplos:
 - `test(a2): tests de image tracking`
 - `chore(ci): workflow de deploy mkdocs`
 
-Terminar cada commit con:
+**Atribución de IA.** Si el commit fue asistido por IA, debe terminar con una línea `Co-Authored-By:` que identifique la herramienta y el modelo **realmente usados en esa sesión**. Claude Code la agrega automáticamente; con otras herramientas, escribirla a mano. Ejemplo:
 
-    Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
-    Claude-Session: https://claude.ai/code/session_0132KarG5hqYHUduHMhyeC7z
+    Co-Authored-By: Claude <modelo> <noreply@anthropic.com>
+
+Reglas:
+
+- No copiar líneas de atribución de otros commits, de este plan ni de sesiones de otra persona. Si la herramienta genera un enlace a la sesión (p. ej. `Claude-Session:`), se incluye solo si corresponde a la sesión propia.
+- Un commit hecho sin IA no lleva atribución.
+- La atribución no reemplaza la revisión: quien hace el commit responde por su contenido.
 
 ### 9.3. Pull requests
 
@@ -871,11 +876,7 @@ Título: igual que el commit principal.
 
 Descripción: template en `.github/pull_request_template.md` con secciones Qué, Por qué, Checklist.
 
-Terminar cada PR con:
-
-    🤖 Generated with [Claude Code](https://claude.com/claude-code)
-
-    https://claude.ai/code/session_0132KarG5hqYHUduHMhyeC7z
+Si el PR fue preparado con IA, la descripción termina con la línea de atribución que genera la herramienta usada (Claude Code agrega `🤖 Generated with [Claude Code](https://claude.com/claude-code)`), con las mismas reglas de la sección 9.2: solo la herramienta y la sesión propias, nunca copiadas.
 
 ### 9.4. Issues
 
@@ -978,4 +979,4 @@ Antes de considerar un módulo "terminado", debe cumplir:
 
 ---
 
-**Última actualización de este plan:** 3 de noviembre de 2026.
+**Última actualización de este plan:** 22 de noviembre de 2026 (secciones 9.2 y 9.3: atribución de IA).
