@@ -13,7 +13,7 @@ etapas correspondientes; todavía no hay validación automática de entregas.
 ## GitHub Pages
 
 Publicado desde la rama `gh-pages`, carpeta `/(root)`:
-<https://leonelmerino.github.io/idi3185-xr-labs/>.
+<https://cursos-merino.github.io/idi3185-xr-labs/>.
 
 El token automático necesita permiso de escritura de contenidos para el job
 de publicación. No se requiere un token personal almacenado como secreto.

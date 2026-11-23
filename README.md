@@ -38,7 +38,7 @@ El resultado se genera en `site/`, que no se versiona.
 | [.github/](.github/README.md) | CI y configuración de publicación |
 
 Las soluciones y las notas internas del ayudante viven exclusivamente en
-[idi3185-xr-labs-solutions](https://github.com/leonelmerino/idi3185-xr-labs-solutions),
+[idi3185-xr-labs-solutions](https://github.com/cursos-merino/idi3185-xr-labs-solutions),
 un repositorio privado separado.
 
 ## Publicación
@@ -46,7 +46,7 @@ un repositorio privado separado.
 El workflow de documentación comprueba PRs a `main` y publica en `gh-pages`
 al incorporar cambios en `main`. Detalles en [.github/README.md](.github/README.md).
 
-Libro publicado: <https://leonelmerino.github.io/idi3185-xr-labs/>.
+Libro publicado: <https://cursos-merino.github.io/idi3185-xr-labs/>.
 
 ## Contribución y licencias
 

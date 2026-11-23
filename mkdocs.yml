@@ -1,8 +1,8 @@
 site_name: IDI 3185 · Laboratorios de Realidad Extendida
 site_description: Libro de laboratorios autoguiados de VR, AR y MR de DILAB-UC.
-site_url: https://leonelmerino.github.io/idi3185-xr-labs/
-repo_url: https://github.com/leonelmerino/idi3185-xr-labs
-repo_name: leonelmerino/idi3185-xr-labs
+site_url: https://cursos-merino.github.io/idi3185-xr-labs/
+repo_url: https://github.com/cursos-merino/idi3185-xr-labs
+repo_name: cursos-merino/idi3185-xr-labs
 edit_uri: edit/main/docs/
 strict: true
 theme:
